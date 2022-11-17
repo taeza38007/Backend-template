@@ -156,4 +156,30 @@
 
 ***
 
-## Setup with Git
+## 🗝 Setup with Git 🚪
+### 1. Initial Git in the root folder of the project
+> `git init`
+
+### 2. Create ".gitignore" file to exclude files out of commiting to Git & insert filesnames in ".gitignore"
+
+> `.env`
+> `node_module`
+
+
+### 3. Add files to Git & Commit
+> `git add .`
+> `git commit -m "First initialise project"`
+
+### 4. Go to Github and Create new repository & copy SSH url of the repo
+
+![Alt text](notepics/Screen%20Shot%202022-11-17%20at%2012.16.42.png)
+
+### 5. Push the project to Github
+
+> `git remote add origin <SSH_URL>`
+> `git push -u origin main`
+
+### 6. Check for project files in Github 📡🎉
+![Alt text](notepics/Screen%20Shot%202022-11-17%20at%2012.13.38.png)
+
+***

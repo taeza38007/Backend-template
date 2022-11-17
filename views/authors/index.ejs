@@ -1,1 +1,16 @@
-All Authors
+
+<h2>Search Authors</h2>
+
+<form action="/authors" method="GET">
+    <label>Name</label>
+    <input autofocus autocomplete="off" type="text" name="name" value="<%= searchOptions.name %>">
+    <button type="submit">Search</button>
+</form>
+<br>
+<% if (authors.length > 0){ %>
+    <% authors.forEach(author => { %>
+        <div><%= author.name %></div>
+    <% }) %>
+<% }else{ %>
+    <p>There is no blog to display</p>
+<% } %>
